@@ -20,19 +20,18 @@
         <div><h2><%=request.getAttribute("header").toString()%></h2></div>
         <div class="border border-dark rounded">
             <div class="d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                    <div class="m-2">
-                        <button class="btn btn-success" type="button" onclick="postMeals()">Order!</button>
-                    </div>
-                </div>
+                <form action="/person" method="get">
+                    <input class="btn btn-success" type="button" value="New" />
+                </form>
             </div>
             <table class="table">
                 <thead>
                 <tr>
-                    <th class="col-1">#</th>
-                    <th class="col-3">Name</th>
+                    <th class="col-1">Id</th>
+                    <th class="col-1">Name</th>
                     <th class="col-1">Surname</th>
-                    <th class="col-2">Age</th>
+                    <th class="col-1">Age</th>
+                    <th class="col-2">Actions</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -40,7 +39,8 @@
                 <%for(int i = 0; i < people.size(); i++) {%>
                 <tr>
                     <th class="col-1"><%=people.get(i).getId()%></th>
-                    <td class="col-3"><%=people.get(i).getName()%></td>
+                    <td class="col-1"><%=people.get(i).getName()%></td>
+                    <th class="col-1"><%=people.get(i).getSurname()%></th>
                     <td class="col-1"><%=people.get(i).getAge()%>$</td>
                     <td class="col-2">
                         <div>
