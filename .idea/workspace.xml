@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef65703a-a1a5-4660-a844-a5d773c82c26" name="Changes" comment="add people">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/people/PersonServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/people/createPerson.jsp" afterDir="false" />
+    <list default="true" id="ef65703a-a1a5-4660-a844-a5d773c82c26" name="Changes" comment="create person">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IPeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/IPeopleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/people/PeopleListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/people/PeopleListServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/people/people.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/people/people.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +205,7 @@
       <workItem from="1710091404582" duration="123000" />
       <workItem from="1710091606205" duration="4074000" />
       <workItem from="1710096205743" duration="5556000" />
-      <workItem from="1710106440198" duration="6770000" />
+      <workItem from="1710106440198" duration="7476000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1709761717421</created>
@@ -239,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710108029345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create person">
+      <created>1710113622800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710113622800</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +264,7 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="Hello Java" />
     <MESSAGE value="add people" />
-    <option name="LAST_COMMIT_MESSAGE" value="add people" />
+    <MESSAGE value="create person" />
+    <option name="LAST_COMMIT_MESSAGE" value="create person" />
   </component>
 </project>

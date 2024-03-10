@@ -41,7 +41,7 @@
                     <th class="col-1"><%=people.get(i).getId()%></th>
                     <td class="col-1"><%=people.get(i).getName()%></td>
                     <th class="col-1"><%=people.get(i).getSurname()%></th>
-                    <td class="col-1"><%=people.get(i).getAge()%>$</td>
+                    <td class="col-1"><%=people.get(i).getAge()%></td>
                     <td class="col-2">
                         <div>
                             <a href="person/?id=<%=people.get(i).getId()%>">Update</a> | <a href="person/?id=<%=people.get(i).getId()%>">Delete</a>
