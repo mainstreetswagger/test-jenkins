@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "PersonPostServlet", value = "/person-create")
+@WebServlet(name = "PersonPostServlet", value = "/Hello/person-create")
 public class AddPersonPostServlet extends HttpServlet {
     IPeopleRepository peopleRepository;
     public AddPersonPostServlet() {
@@ -34,11 +34,11 @@ public class AddPersonPostServlet extends HttpServlet {
             personId = Integer.parseInt(id);
             if(personId > 0) {
                 result = peopleRepository.update(new Person(personId, name, surname, age));
-                String route = String.format("/people-list?id=%d", personId);
+                String route = String.format("/Hello/people-list?id=%d", personId);
                 response.sendRedirect(route);
             } else {
                 personId = peopleRepository.add(new Person(name, surname, age));
-                String route = String.format("/people-list?id=%d", personId);
+                String route = String.format("/Hello/people-list?id=%d", personId);
                 response.sendRedirect(route);
             }
         } catch (Exception e) {

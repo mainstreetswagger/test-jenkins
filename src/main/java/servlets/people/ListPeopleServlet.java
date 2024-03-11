@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "PeopleListServlet", value = "/people-list")
+@WebServlet(name = "PeopleListServlet", value = "/Hello/people-list")
 public class ListPeopleServlet extends HttpServlet {
     IPeopleRepository peopleRepository;
     public ListPeopleServlet() {

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "PersonServlet", value = "/person")
+@WebServlet(name = "PersonServlet", value = "/Hello/person")
 public class AddPersonGetServlet extends HttpServlet {
     IPeopleRepository peopleRepository;
     public AddPersonGetServlet() {

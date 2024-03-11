@@ -10,7 +10,7 @@
         <div><h2><%=request.getAttribute("header").toString()%></h2></div>
         <div class="border border-dark rounded">
             <%Person person = (Person)request.getAttribute("person");%>
-            <form action="/person-create" method="post">
+            <form action="/Hello/person-create" method="post">
                 <input type="hidden" value="<%=person.getId()%>" name="id" />
                     <div>
                         <label>Name:</label>

@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.rmi.server.ExportException;
 
-@WebServlet(name = "PersonDeleteServlet", value = "/person-delete")
+@WebServlet(name = "PersonDeleteServlet", value = "/Hello/person-delete")
 public class DeletePersonServlet extends HttpServlet {
     IPeopleRepository peopleRepository;
     public DeletePersonServlet() {
@@ -32,7 +32,7 @@ public class DeletePersonServlet extends HttpServlet {
                 }
             }
             if(result) {
-                response.sendRedirect("/people-list");
+                response.sendRedirect("/Hello/people-list");
             } else {
                 throw new Exception("Failed to delete...");
             }

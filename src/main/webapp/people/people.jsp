@@ -22,7 +22,7 @@
             <div class="d-flex justify-content-between">
                 <div class="d-flex justify-content-between">
                     <div class="m-2">
-                        <form action="/person" method="get">
+                        <form action="/Hello/person" method="get">
                             <input class="btn btn-success" type="submit" value="New" />
                         </form>
                     </div>
@@ -48,7 +48,7 @@
                     <td class="col-1"><%=people.get(i).getAge()%></td>
                     <td class="col-2">
                         <div>
-                            <a href="/person?id=<%=people.get(i).getId()%>">Update</a> | <a href="/person-delete?id=<%=people.get(i).getId()%>">Delete</a>
+                            <a href="/Hello/person?id=<%=people.get(i).getId()%>">Update</a> | <a href="/Hello/person-delete?id=<%=people.get(i).getId()%>">Delete</a>
                         </div>
                     </td>
                 </tr>
