@@ -26,7 +26,6 @@ public class AddPersonGetServlet extends HttpServlet {
                 int personId = Integer.parseInt(id);
                 person = peopleRepository.get(personId);
             }
-            //commit
 
 
             request.setAttribute("person", person);
