@@ -27,9 +27,10 @@ public class AddPersonGetServlet extends HttpServlet {
                 person = peopleRepository.get(personId);
             }
 
+
             request.setAttribute("person", person);
-            request.setAttribute("title", "Create");
-            request.setAttribute("header", "New");
+            request.setAttribute("title", person.getId() > 0 ? "Update" : "Create");
+            request.setAttribute("header", person.getId() > 0 ? "Update" : "New");
             request.getRequestDispatcher("/people/upsertPerson.jsp").forward(request, response);
         } catch (Exception e) {
             request.setAttribute("error", e.getMessage());

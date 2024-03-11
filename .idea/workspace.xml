@@ -9,13 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef65703a-a1a5-4660-a844-a5d773c82c26" name="Changes" comment="final">
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/people/AddPersonGetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/people/AddPersonGetServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/people/AddPersonPostServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/people/AddPersonPostServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/people/DeletePersonServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/people/DeletePersonServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/people/ListPeopleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/people/ListPeopleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/people/people.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/people/people.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/people/upsertPerson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/people/upsertPerson.jsp" afterDir="false" />
+    <list default="true" id="ef65703a-a1a5-4660-a844-a5d773c82c26" name="Changes" comment="final 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +308,7 @@
       <workItem from="1710091606205" duration="4074000" />
       <workItem from="1710096205743" duration="5556000" />
       <workItem from="1710106440198" duration="8863000" />
-      <workItem from="1710137756903" duration="24587000" />
+      <workItem from="1710137756903" duration="25278000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1709761717421</created>
@@ -399,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710170077931</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="final 1">
+      <created>1710170820781</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710170820781</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +430,8 @@
     <MESSAGE value="add button" />
     <MESSAGE value="hello route" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="final 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="final 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
