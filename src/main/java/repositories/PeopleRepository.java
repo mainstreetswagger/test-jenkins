@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PeopleRepository implements IPeopleRepository {
-    private static final String url = "jdbc:postgresql://192.168.0.94:5432/andersen";
+    private static final String url = "jdbc:postgresql://172.30.12.44:5432/andersen";
     private static final String username = "postgres";
     private static final String password = "1234";
 
