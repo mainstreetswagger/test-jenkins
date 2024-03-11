@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef65703a-a1a5-4660-a844-a5d773c82c26" name="Changes" comment="create person">
+    <list default="true" id="ef65703a-a1a5-4660-a844-a5d773c82c26" name="Changes" comment="removed dollar sign">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/people/createPerson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/people/createPerson.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/people/people.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/people/people.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +206,7 @@
       <workItem from="1710091404582" duration="123000" />
       <workItem from="1710091606205" duration="4074000" />
       <workItem from="1710096205743" duration="5556000" />
-      <workItem from="1710106440198" duration="7476000" />
+      <workItem from="1710106440198" duration="8303000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1709761717421</created>
@@ -242,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710113622800</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="removed dollar sign">
+      <created>1710114322332</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710114322332</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +273,7 @@
     <MESSAGE value="Hello Java" />
     <MESSAGE value="add people" />
     <MESSAGE value="create person" />
-    <option name="LAST_COMMIT_MESSAGE" value="create person" />
+    <MESSAGE value="removed dollar sign" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed dollar sign" />
   </component>
 </project>

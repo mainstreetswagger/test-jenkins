@@ -20,9 +20,13 @@
         <div><h2><%=request.getAttribute("header").toString()%></h2></div>
         <div class="border border-dark rounded">
             <div class="d-flex justify-content-between">
-                <form action="/person" method="get">
-                    <input class="btn btn-success" type="button" value="New" />
-                </form>
+                <div class="d-flex justify-content-between">
+                    <div class="m-2">
+                        <form action="/person" method="get">
+                            <input class="btn btn-success" type="button" value="New" />
+                        </form>
+                    </div>
+                </div>
             </div>
             <table class="table">
                 <thead>

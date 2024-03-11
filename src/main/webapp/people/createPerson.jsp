@@ -20,13 +20,7 @@
     <div class="container m-2">
         <div><h2><%=request.getAttribute("header").toString()%></h2></div>
         <div class="border border-dark rounded">
-            <div class="d-flex justify-content-between">
-                <form action="/person" method="get">
-                    <input class="btn btn-success" type="button" value="New" />
-                </form>
-            </div>
             <form method="post" >
-                <fieldset>
                     <div>
                         <label>Name:</label>
                         <input type="text" name="name" value="" />
@@ -43,7 +37,6 @@
                         <label>&nbsp;</label>
                         <input type="submit" value="Submit" class="submit" />
                     </div>
-                </fieldset>
             </form>
         </div>
     </div>
