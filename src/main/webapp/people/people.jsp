@@ -22,8 +22,7 @@
             <div class="d-flex justify-content-between">
                 <div class="d-flex justify-content-between">
                     <div class="m-2">
-                        <p>HHHHHHHHHHHHHHHHHHWWWWOOO</p>
-                        <form action="http://localhost:8080/test_jenkins_war_exploded/person">
+                        <form action="/test_jenkins_war_exploded/person" method="get">
                             <input class="btn btn-success" type="submit" value="New" />
                         </form>
                     </div>
