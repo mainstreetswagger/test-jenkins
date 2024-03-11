@@ -1,6 +1,5 @@
 package repositories;
 
-import dto.PersonDto;
 import models.Person;
 
 import java.sql.*;
@@ -19,7 +18,7 @@ public class PeopleRepository implements IPeopleRepository {
             Class.forName("org.postgresql.Driver");
             try (Connection conn = DriverManager.getConnection(url, username, password)){
                 Statement statement = conn.createStatement();
-                ResultSet resultSet = statement.executeQuery("select * from people;");
+                ResultSet resultSet = statement.executeQuery("select * from people order by id;");
                 while(resultSet.next()){
                     int id = resultSet.getInt(1);
                     String name = resultSet.getString(2);
@@ -59,7 +58,7 @@ public class PeopleRepository implements IPeopleRepository {
         }
         return person;
     }
-    public int add(PersonDto person) {
+    public int add(Person person) {
         try{
             Class.forName("org.postgresql.Driver");
             try (Connection conn = DriverManager.getConnection(url, username, password)){
@@ -68,7 +67,15 @@ public class PeopleRepository implements IPeopleRepository {
                     preparedStatement.setString(1, person.getName());
                     preparedStatement.setString(2, person.getSurname());
                     preparedStatement.setInt(3, person.getAge());
-                    return  preparedStatement.executeUpdate();
+
+                    if(preparedStatement.executeUpdate() == 1) {
+                        ResultSet resultSet = preparedStatement.getGeneratedKeys();
+                        if(resultSet.next()) {
+                            return resultSet.getInt(1);
+                        }
+                    }
+
+                    return 0;
                 }
             }
         }

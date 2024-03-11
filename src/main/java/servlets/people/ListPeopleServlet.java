@@ -12,10 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "PeopleListServlet", value = "/people-list")
-public class PeopleListServlet extends HttpServlet {
-    //list all people
+public class ListPeopleServlet extends HttpServlet {
     IPeopleRepository peopleRepository;
-    public PeopleListServlet() {
+    public ListPeopleServlet() {
         peopleRepository = new PeopleRepository();
     }
     @Override

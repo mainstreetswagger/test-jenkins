@@ -2,9 +2,9 @@ package models;
 
 public class Person {
     private int id;
-    private String name;
-    private String surname;
-    private int age;
+    private String name = "";
+    private String surname = "";
+    private int age = 0;
     public Person() { }
     public Person(String name, String surname, int age) {
         this.name = name;

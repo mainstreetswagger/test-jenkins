@@ -9,8 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef65703a-a1a5-4660-a844-a5d773c82c26" name="Changes" comment="add button">
+    <list default="true" id="ef65703a-a1a5-4660-a844-a5d773c82c26" name="Changes" comment="hello route">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/people/AddPersonPostServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/people/DeletePersonServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/PersonDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/IPeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/IPeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/PeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/people/PeopleListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/people/ListPeopleServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/people/PersonServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/people/AddPersonGetServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/people/createPerson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/people/upsertPerson.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/people/people.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/people/people.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +215,7 @@
       <deployment>
         <artifact name="test-jenkins:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/test_jenkins_war_exploded" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -309,7 +319,7 @@
       <workItem from="1710091606205" duration="4074000" />
       <workItem from="1710096205743" duration="5556000" />
       <workItem from="1710106440198" duration="8863000" />
-      <workItem from="1710137756903" duration="6739000" />
+      <workItem from="1710137756903" duration="24111000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1709761717421</created>
@@ -381,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710146187516</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="hello route">
+      <created>1710146438346</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710146438346</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,27 +425,28 @@
     <MESSAGE value="fix new person form" />
     <MESSAGE value="test" />
     <MESSAGE value="add button" />
-    <option name="LAST_COMMIT_MESSAGE" value="add button" />
+    <MESSAGE value="hello route" />
+    <option name="LAST_COMMIT_MESSAGE" value="hello route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/servlets/people/PeopleListServlet.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/repositories/PeopleRepository.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/people/people.jsp</url>
-          <line>25</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/servlets/people/PersonServlet.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/main/java/servlets/people/AddPersonPostServlet.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="_jspx_out" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

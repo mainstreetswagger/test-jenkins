@@ -1,15 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: KWalker
-  Date: 3/10/2024
-  Time: 11:26 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="models.Person" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.List" %>
 <html>
 <head>
     <title><%=request.getAttribute("title").toString()%></title>
@@ -20,18 +9,20 @@
     <div class="container m-2">
         <div><h2><%=request.getAttribute("header").toString()%></h2></div>
         <div class="border border-dark rounded">
-            <form method="post" >
+            <%Person person = (Person)request.getAttribute("person");%>
+            <form action="/person-create" method="post">
+                <input type="hidden" value="<%=person.getId()%>" name="id" />
                     <div>
                         <label>Name:</label>
-                        <input type="text" name="name" value="" />
+                        <input type="text" name="name" value="<%=person.getName()%>" />
                     </div>
                     <div>
                         <label>Surname:</label>
-                        <input type="text" name="surname" value="" />
+                        <input type="text" name="surname" value="<%=person.getSurname()%>" />
                     </div>
                     <div>
                         <label>Age:</label>
-                        <input type="number" name="age" value="1" min="1" max="100"/>
+                        <input type="number" name="age" min="1" max="100" value="<%=person.getAge()%>" />
                     </div>
                     <div>
                         <label>&nbsp;</label>

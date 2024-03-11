@@ -22,7 +22,7 @@
             <div class="d-flex justify-content-between">
                 <div class="d-flex justify-content-between">
                     <div class="m-2">
-                        <form action="/Hello/person" method="get">
+                        <form action="/person" method="get">
                             <input class="btn btn-success" type="submit" value="New" />
                         </form>
                     </div>
@@ -42,13 +42,13 @@
                 <%List<Person> people = (ArrayList<Person>)request.getAttribute("people");%>
                 <%for(int i = 0; i < people.size(); i++) {%>
                 <tr>
-                    <th class="col-1"><%=people.get(i).getId()%></th>
+                    <td class="col-1"><%=people.get(i).getId()%></td>
                     <td class="col-1"><%=people.get(i).getName()%></td>
-                    <th class="col-1"><%=people.get(i).getSurname()%></th>
+                    <td class="col-1"><%=people.get(i).getSurname()%></td>
                     <td class="col-1"><%=people.get(i).getAge()%></td>
                     <td class="col-2">
                         <div>
-                            <a href="person/?id=<%=people.get(i).getId()%>">Update</a> | <a href="person/?id=<%=people.get(i).getId()%>">Delete</a>
+                            <a href="/person?id=<%=people.get(i).getId()%>">Update</a> | <a href="/person-delete?id=<%=people.get(i).getId()%>">Delete</a>
                         </div>
                     </td>
                 </tr>
