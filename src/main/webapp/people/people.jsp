@@ -23,7 +23,7 @@
                 <div class="d-flex justify-content-between">
                     <div class="m-2">
                         <form action="/Hello/person" method="get">
-                            <input class="btn btn-success" type="submit" value="New" />
+                            <input class="btn btn-success" type="submit" value="Add New" />
                         </form>
                     </div>
                 </div>
